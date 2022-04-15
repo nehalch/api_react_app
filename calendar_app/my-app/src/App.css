@@ -1,0 +1,97 @@
+.background-conteiner {
+  background-image: linear-gradient(blue, yellow);
+  inline-size: 100%;
+  block-size: 500px;
+}
+
+.calendar-conteiner {
+  inline-size: 55%;
+  margin: auto;
+  position: relative;
+  top: -500px;
+  padding-block-start: 200px;
+}
+
+.datepicker-conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.datepicker-conteiner span {
+  font-size: 20px;
+}
+
+.datepicker-conteiner svg {
+  border-radius: 100px;
+  background: #E8E8E8;
+  padding: 10px 10px;
+  margin: 10px;
+}
+
+.weekdays-conteiner {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.weekdays-conteiner .weekday {
+  color: grey;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+
+.calendar .week {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: white;
+}
+
+
+.calendar .week .date {
+  inline-size: 30px;
+  block-size: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.week>button {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+
+}
+
+.week>button.today {
+  background-color: #db4d4d;
+  border: 2px solid #db4d4d;
+  color: #ffffff;
+  border-radius: 5px;
+  filter: drop-shadow(2px 2px 2px #db4d4d);
+}
+
+.week>button:hover {
+  border-radius: 5px;
+  border: #ffbbbb 2px solid;
+}
+
+.week>button.selected {
+  border-radius: 5px;
+  border: #ff0000 2px solid;
+}
